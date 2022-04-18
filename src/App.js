@@ -1,10 +1,14 @@
-import logo from './logo.svg';
+/* import logo from './logo.svg'; */
 import './App.css';
+import DaisyNavBar from './components/DaisyNavBar';
+import NavBar from './components/NavBar';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hola Mundo con React!</h1>
+      <DaisyNavBar/>
+      <NavBar/>
+      <h1 className="text-3xl font-bold underline">Hola Mundo con React!</h1>
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
