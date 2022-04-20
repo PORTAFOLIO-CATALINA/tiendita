@@ -1,4 +1,5 @@
 import React from 'react'
+import CartWidget from './CartWidget'
 
 const DaisyNavBar = () => {
   return (
@@ -9,8 +10,11 @@ const DaisyNavBar = () => {
     <div className="flex-none gap-2">
       <div className="form-control">
         <input type="text" placeholder="Search" className="input input-bordered"/>
+          
       </div>
+       <CartWidget/>
       <div className="dropdown dropdown-end">
+       
         <label tabindex="0" className="btn btn-ghost btn-circle avatar">
           <div className="w-10 rounded-full">
             <img src="https://api.lorem.space/image/face?hash=33791" />
