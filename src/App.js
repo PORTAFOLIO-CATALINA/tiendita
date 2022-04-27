@@ -5,6 +5,8 @@ import DaisyNavBar from './components/DaisyNavBar';
 import Saludo from './components/Saludo';
 import Card from './components/Card';
 import ItemListContainer from './components/ItemListContainer';
+import CardNew from './components/CardNew';
+import Contador from './components/Contador';
 
 function App() {
 
@@ -15,7 +17,7 @@ function App() {
   return (
     <div className="App">
       <DaisyNavBar/>
-      <NavBar/>
+      {/* <NavBar/>
       <h1 className={styles.header}>Hola Mundo con React!</h1>
 
       <Saludo name='Ana' edad='20' funcionalidad={myFuncion}/>
@@ -28,7 +30,7 @@ function App() {
 
       </Card>
 
-      <ItemListContainer/>
+      <ItemListContainer/> */}
 
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -44,8 +46,12 @@ function App() {
           Learn React
         </a>
       </header> */}
+
+      <CardNew otroComponente={Saludo}></CardNew>
+      <Contador></Contador>
+     <ItemListContainer></ItemListContainer>
     </div>
-  );
+  )
 }
 
 export default App;
